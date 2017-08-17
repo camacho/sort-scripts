@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sortScripts sorts based on prefix and suffix 1`] = `
+Array [
+  Array [
+    "docs",
+    "markdown-magic",
+  ],
+  Array [
+    "postdocs",
+    "echo \\"'.md' files updated\\"",
+  ],
+  Array [
+    "postmerge",
+    "lint-staged",
+  ],
+  Array [
+    "pretest",
+    "check-engines",
+  ],
+  Array [
+    "test",
+    "jest",
+  ],
+]
+`;
