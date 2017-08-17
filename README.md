@@ -12,7 +12,7 @@ const scripts = {
   pretest: "check-engines",
   postmerge: "lint-staged",
   docs: "markdown-magic",
-  postdocs: "echo \"'.md' files updated\"
+  postdocs: "echo \"'.md' files updated\""
 };
 
 sort(scripts);
