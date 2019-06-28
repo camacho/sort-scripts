@@ -1,41 +1,17 @@
 {
   "name": "sort-scripts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sort a map of scripts in a logical order",
-  "main": "index.js",
-  "husky": {
-    "scripts": {
-      "pre-publish": "yarn test",
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
-  "scripts": {
-    "test": "jest",
-    "format": "prettier --single-quote --trailing-comma es5 --write \"*.js\""
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/camacho/sort-scripts.git"
   },
-  "author": "Patrick Camacho <patrick@daftdevelopers.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/camacho/sort-scripts/issues"
   },
   "homepage": "https://github.com/camacho/sort-scripts#readme",
-  "devDependencies": {
-    "husky": "^2.3.0",
-    "jest": "^24.8.0",
-    "lint-staged": "^8.1.7",
-    "prettier": "^1.17.1"
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --trailing-comma es5 --write",
-      "git add"
-    ]
-  },
+  "author": "Patrick Camacho <patrick@daftdevelopers.com>",
   "keywords": [
     "sort",
     "package",
@@ -43,5 +19,29 @@
     "ordering",
     "documentation",
     "docs"
-  ]
+  ],
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --single-quote --trailing-comma es5 --write \"*.js\"",
+    "prepublishOnly": "jest",
+    "test": "jest"
+  },
+  "husky": {
+    "scripts": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma es5 --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^2.7.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  }
 }
